@@ -30,7 +30,7 @@ namespace JunoWebService.Controllers
                     {
                         foreach (Importacao objLstImportacao in lstImportacao)
                         {
-                            PRetorno += "Lat:" + objLstImportacao.Lat.ToString() + "," + "Long:" + objLstImportacao.Long.ToString() + "/";
+                            PRetorno += "Lat:" + objLstImportacao.Latitude.ToString() + "," + "Long:" + objLstImportacao.Longitude.ToString() + "/";
                         }                       
                     }
                 }                
@@ -55,7 +55,7 @@ namespace JunoWebService.Controllers
             {
                 foreach (Importacao objLstImportacao in lstImportacao)
                 {
-                    PRetorno += "Indice:" + objLstImportacao.Brilho.ToString() + "," + "Lat:" + objLstImportacao.Lat.ToString() + "," + "Long:" + objLstImportacao.Long.ToString() + "/";
+                    PRetorno += "Indice:" + objLstImportacao.Brilho.ToString() + "," + "Lat:" + objLstImportacao.Latitude.ToString() + "," + "Long:" + objLstImportacao.Longitude.ToString() + "/";
                 }
             }
             else

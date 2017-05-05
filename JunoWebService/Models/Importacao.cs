@@ -9,8 +9,8 @@ namespace JunoWebService.Models
     public class Importacao
     {
         public int IdImportacao { get; set; }
-        public string Long { get; set; }
-        public string Lat { get; set; }
+        public string Longitude { get; set; }
+        public string Latitude { get; set; }
         public string Brilho { get; set; }
 
         public List<Importacao> CarregarDados(string Latitude, string Longitude)
@@ -29,8 +29,8 @@ namespace JunoWebService.Models
             {
                 Importacao objImportacao = new Importacao();
                 objImportacao.IdImportacao = Convert.ToInt32(Dados["IdImportacao"]);
-                objImportacao.Lat = Dados["Lat"].ToString();
-                objImportacao.Long = Dados["Long"].ToString();
+                objImportacao.Latitude = Dados["Latitude"].ToString();
+                objImportacao.Longitude = Dados["Longitude"].ToString();
                 objImportacao.Brilho = Dados["Brilho"].ToString();               
                 ListaImportacao.Add(objImportacao);
             }
@@ -53,8 +53,8 @@ namespace JunoWebService.Models
             {
                 Importacao objImportacao = new Importacao();
                 objImportacao.IdImportacao = Convert.ToInt32(Dados["IdImportacao"]);
-                objImportacao.Lat = Dados["Lat"].ToString();
-                objImportacao.Long = Dados["Long"].ToString();
+                objImportacao.Latitude = Dados["Latitude"].ToString();
+                objImportacao.Longitude = Dados["Longitude"].ToString();
                 objImportacao.Brilho = Dados["Brilho"].ToString();
                 ListaImportacao.Add(objImportacao);
             }

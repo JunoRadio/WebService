@@ -17,7 +17,7 @@ namespace JunoWebService.Models
         public string Hora { get; set; }
 
         public string Retorno;
-
+        
 
         public List<claLatLong> CarregarDados(string inCodDispositivo)
         {
